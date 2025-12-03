@@ -106,3 +106,7 @@ process.on('SIGTERM', () => {
 
 // Start the server
 startServer();
+const authRoutes = require('./routes/auth');
+app.use('/api/auth', authRoutes);
+const notesRoutes = require('./routes/notes');
+app.use('/api/notes', notesRoutes);
