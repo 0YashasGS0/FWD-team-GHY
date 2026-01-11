@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Secure Note | SecureShare+</title>
+    <title>Create Secure Note | Prive Note+</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                <a href="index.html"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
                     <span class="logo-icon">🔒</span>
-                    <span class="logo-text">SecureShare+</span>
+                    <span class="logo-text">Prive Note+</span>
                 </a>
             </div>
             <div class="nav-links">
@@ -37,13 +40,9 @@
                     <!-- Note Content -->
                     <div class="form-group">
                         <label for="noteContent">Confidential Message</label>
-                        <textarea 
-                            id="noteContent" 
-                            name="noteContent"
+                        <textarea id="noteContent" name="noteContent"
                             placeholder="Enter passwords, sensitive information, or any confidential message..."
-                            rows="8"
-                            required
-                        ></textarea>
+                            rows="8" required></textarea>
                         <small class="char-counter">
                             <span id="charCount">0</span> characters
                         </small>
@@ -55,11 +54,7 @@
                             Recipient Email (Optional)
                             <span class="help-icon" title="Leave empty for anyone with link">ℹ️</span>
                         </label>
-                        <input 
-                            type="email" 
-                            id="recipientEmail"
-                            placeholder="recipient@example.com"
-                        >
+                        <input type="email" id="recipientEmail" placeholder="recipient@example.com">
                         <small class="form-hint">Only this email can access the note</small>
                     </div>
 
@@ -120,12 +115,7 @@
                     </div>
 
                     <div class="link-box">
-                        <input 
-                            type="text" 
-                            id="generatedLink" 
-                            readonly
-                            class="link-input"
-                        >
+                        <input type="text" id="generatedLink" readonly class="link-input">
                         <button id="copyLinkBtn" class="btn-copy">
                             📋 Copy
                         </button>
@@ -171,7 +161,8 @@
                     <div class="step-icon">2️⃣</div>
                     <div>
                         <h4>Encrypted in Browser</h4>
-                        <p>Your note is encrypted using AES-256 before leaving your device. Server never sees plaintext.</p>
+                        <p>Your note is encrypted using AES-256 before leaving your device. Server never sees plaintext.
+                        </p>
                     </div>
                 </div>
 
@@ -179,7 +170,8 @@
                     <div class="step-icon">3️⃣</div>
                     <div>
                         <h4>Generate Secure Link</h4>
-                        <p>A unique link is created with the decryption key in the URL fragment (never sent to server).</p>
+                        <p>A unique link is created with the decryption key in the URL fragment (never sent to server).
+                        </p>
                     </div>
                 </div>
 
@@ -211,4 +203,5 @@
     <script src="js/crypto.js"></script>
     <script src="js/create-note.js"></script>
 </body>
+
 </html>

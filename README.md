@@ -1,5 +1,6 @@
 # FWD-team-GHY
-# SecureShare+ 🛡️
+# FWD-team-GHY
+# Prive Note+ 🛡️
 
 A secure, self-destructing note sharing application with biometric authentication and end-to-end encryption.
 

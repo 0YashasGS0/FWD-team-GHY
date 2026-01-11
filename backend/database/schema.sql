@@ -1,4 +1,4 @@
--- SecureShare+ Database Schema
+-- Prive Note+ Database Schema
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS Users (

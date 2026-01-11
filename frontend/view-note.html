@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Secure Note | SecureShare+</title>
+    <title>View Secure Note | Prive Note+</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                <a href="index.html"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
                     <span class="logo-icon">🔒</span>
-                    <span class="logo-text">SecureShare+</span>
+                    <span class="logo-text">Prive Note+</span>
                 </a>
             </div>
             <div class="nav-links">
@@ -25,7 +28,7 @@
     <!-- Main Content -->
     <section class="view-note-section">
         <div class="view-container">
-            
+
             <!-- Loading State -->
             <div id="loadingState" class="state-card">
                 <div class="loader"></div>
@@ -39,7 +42,7 @@
                     <span class="prompt-icon">🔐</span>
                     <h2>Biometric Verification Required</h2>
                     <p>This note is protected. Please verify your identity to access.</p>
-                    
+
                     <div class="verification-info">
                         <div class="info-badge">
                             <span>⏱️</span>
@@ -64,7 +67,8 @@
 
                     <div class="security-notice">
                         <span class="notice-icon">⚠️</span>
-                        <p><strong>Warning:</strong> This note may self-destruct after viewing. Make sure you're ready to read it.</p>
+                        <p><strong>Warning:</strong> This note may self-destruct after viewing. Make sure you're ready
+                            to read it.</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +133,7 @@
                 <span class="error-icon">❌</span>
                 <h2 id="errorTitle">Access Denied</h2>
                 <p id="errorMessage">This note is no longer available.</p>
-                
+
                 <div class="error-reasons">
                     <h4>Possible Reasons:</h4>
                     <ul>
@@ -152,7 +156,7 @@
                 </div>
                 <h2>Note Destroyed</h2>
                 <p>This message has been permanently deleted and cannot be recovered.</p>
-                
+
                 <div class="destruction-info">
                     <p>✅ No copies remain on the server</p>
                     <p>✅ Encryption keys have been discarded</p>
@@ -173,4 +177,5 @@
     <script src="js/biometric.js"></script>
     <script src="js/view-note.js"></script>
 </body>
+
 </html>
